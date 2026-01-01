@@ -4,11 +4,11 @@ set -e
 
 echo "🚀 Setting up Val.town development environment..."
 
-# Install Deno
+# Install Deno (non-interactive)
 echo "📦 Installing Deno..."
-curl -fsSL https://deno.land/install.sh | sh
 export DENO_INSTALL="/home/node/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+curl -fsSL https://deno.land/install.sh | sh -s -- -y
 
 # Add Deno to PATH permanently
 echo 'export DENO_INSTALL="/home/node/.deno"' >> ~/.bashrc
