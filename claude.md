@@ -170,26 +170,26 @@ Every interface must work well on mobile:
 
 ### Val CLI Architecture
 
-The `val` CLI is available in your development environment:
+The `vt` CLI is available in your development environment:
 
 ```bash
 # Deploy a val
-val deploy myfunction.ts
+vt deploy myfunction.ts
 
 # List your vals
-val list
+vt list
 
 # Run a val locally
-val run myfunction.ts
+vt run myfunction.ts
 
 # Get val logs
-val logs myval
+vt logs myval
 ```
 
 **Architect accordingly**:
-- Develop locally with the val CLI
+- Develop locally with the vt CLI
 - Test before deploying
-- Use `val` commands in your development workflow
+- Use `vt` commands in your development workflow
 - Understand that your code will run in Val.town's Deno runtime
 
 ### Be Prepared, Be Opinionated, Challenge Assumptions
@@ -299,7 +299,7 @@ When starting a new val project from this template:
 - [ ] Write your first failing test
 - [ ] Implement the feature to pass the test
 - [ ] Commit both (separately)
-- [ ] Deploy to Val.town using `val deploy`
+- [ ] Deploy to Val.town using `vt deploy`
 - [ ] Ask questions about anything unclear
 - [ ] Keep documentation updated as you build
 

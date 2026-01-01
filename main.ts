@@ -43,7 +43,7 @@ export default async function handler(req: Request): Promise<Response> {
           <li>Write your first test in <code>tests/</code></li>
           <li>Implement your feature</li>
           <li>Commit both separately</li>
-          <li>Deploy with <code>val deploy main.ts</code></li>
+          <li>Deploy with <code>vt deploy main.ts</code></li>
         </ol>
         <p><strong>Remember:</strong> Test first. No React. Mobile-responsive. Commit often.</p>
       </body>

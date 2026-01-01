@@ -25,7 +25,7 @@ This template provides a development environment and guidelines for building Val
 
 3. **Authenticate**
    ```bash
-   val login
+   vt login
    gh auth login
    ```
 
@@ -38,7 +38,7 @@ This template provides a development environment and guidelines for building Val
    mkdir -p src
    # Write code and tests following TDD
    # Deploy when ready
-   val deploy src/main.ts
+   vt deploy src/main.ts
    ```
 
 ## What's Included
@@ -141,13 +141,13 @@ await sqlite.execute("SELECT * FROM users");
 
 ```bash
 # Deploy a val
-val deploy main.ts
+vt deploy main.ts
 
 # View logs
-val logs myval
+vt logs myval
 
 # List vals
-val list
+vt list
 ```
 
 ## Testing
