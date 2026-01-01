@@ -41,5 +41,9 @@
 
   "forwardPorts": [8000, 8080, 3000],
 
-  "postAttachCommand": "deno --version && val --version && gh --version"
+  "postAttachCommand": "deno --version && vt --version && gh --version",
+
+  "remoteEnv": {
+    "VALTOWN_API_KEY": "${localEnv:VALTOWN_API_KEY}"
+  }
 }

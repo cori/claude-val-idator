@@ -18,21 +18,38 @@ This template provides a development environment and guidelines for building Val
    - Click "Use this template" on GitHub
    - Or: Clone and start building
 
-2. **Open in a dev container**
+2. **Set up Val.town API Key (Optional but Recommended)**
+
+   To avoid being prompted for your API key every time:
+
+   **For GitHub Codespaces:**
+   - Go to Settings → Codespaces → Secrets
+   - Add a new secret: `VALTOWN_API_KEY`
+   - Get your key from: https://www.val.town/settings/api
+
+   **For local development:**
+   - Set the environment variable: `export VALTOWN_API_KEY=your_key`
+   - Or copy `.env.example` to `.env` and fill in your key
+
+   **Alternative:**
+   - Run `vt login` once and credentials will persist in the mounted `~/.val` directory
+
+3. **Open in a dev container**
    - GitHub Codespaces: Click "Code" → "Create codespace"
    - VS Code: "Reopen in Container"
    - Claude Code on web: Will automatically use the devcontainer
 
-3. **Authenticate**
+4. **Authenticate with GitHub**
    ```bash
-   vt login
    gh auth login
    ```
 
-4. **Read the guidelines**
+   Note: Val.town authentication is handled by step 2
+
+5. **Read the guidelines**
    - See `claude.md` for development philosophy and Val.town essentials
 
-5. **Start building**
+6. **Start building**
    ```bash
    # Create your first val
    mkdir -p src
